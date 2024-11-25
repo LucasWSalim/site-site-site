@@ -3,7 +3,6 @@ function valorAlt(max, min) {
     return aleatorio
 }
 
-// [x] 1. escolher 3 exercícios da prova de arrays e postar no site
 function ex1Prova() {
     let matriz1 = [
         [0, 0, 0, 0, 0, 0, 0],
@@ -184,7 +183,6 @@ function ex3Prova() {
     res.innerHTML += `<br>`
 }
 
-// [x] 2. programação dos métodos de busca e ordenação buble Sort, insertion sort e selection sort
 function ordenacao() {
     let quest = document.querySelector('#ordenacao')
     let dive = document.createElement('pre')
@@ -267,7 +265,6 @@ function insertSort(array) {
     return cont
 }
 
-// [x] 4. Exemplo de programa com o laço FOR
 function exLacoFor() {
     let quest = document.querySelector('#for')
     let dive = document.createElement('pre')
@@ -305,7 +302,6 @@ function exLacoFor() {
     res.innerHTML += `  `
 }
 
-// [x] 5. Exemplo de programa com o laço WHILE
 function exLacoWhile() {
     let quest = document.querySelector('#while')
     let dive = document.createElement('pre')
@@ -329,7 +325,6 @@ function exLacoWhile() {
     res.innerHTML += '       '
 }
 
-// [x] 6. Exemplo de programa com estrutura IF, ELSE e ELSE-IF
 function exIfElse() {
     let quest = document.querySelector('#if')
     let dive = document.createElement('pre')

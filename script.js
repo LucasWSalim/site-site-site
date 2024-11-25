@@ -3,15 +3,6 @@ function valorAlt(max, min) {
     return aleatorio
 }
 
-function mostra(qual) {
-    let codigo = document.getElementById(qual)
-    if(codigo.style.display == 'flex') {
-        codigo.style.display = 'none'
-    } else {
-        codigo.style.display = 'flex'
-    }
-}
-
 // [x] 1. escolher 3 exercícios da prova de arrays e postar no site
 function ex1Prova() {
     let matriz1 = [

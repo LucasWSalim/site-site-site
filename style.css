@@ -29,27 +29,8 @@ body {
     height: 100vh;
 }
 
-header {
-    background-color: #050a30;
-    height: fit-content;
-}
-
 header img {
     height: 100px;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-header nav a {
-    color: white;
-}
-
-header nav a:hover {
-    font-weight: bold;
-    border-bottom: white 2px solid;
 }
 
 main {
@@ -86,7 +67,8 @@ main section img:hover {
 }
 
 
-.div-especial div, .div-especial section {
+.div-especial div,
+.div-especial section {
     margin: 0 10px;
     flex: 1 1 100px;
     display: flex;
@@ -106,7 +88,7 @@ h1 {
 }
 
 hr {
-    border: white 1px solid;
+    border: pink 1px solid;
     width: 90%;
     margin: 10px 0;
 }
@@ -178,15 +160,7 @@ iframe {
 
 #redes a:hover {
     font-weight: bold;
-}
-
-footer {
-    background-color: #050a30;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    background: linear-gradient(to right, rgb(255, 0, 128), rgb(200, 37, 157), rgb(140, 71, 153), rgb(68, 46, 159), rgb(0, 50, 160));
 }
 
 .quest {
@@ -216,8 +190,119 @@ button {
 }
 
 button:hover {
-    color: #0366fa;
+    background: linear-gradient(to right, rgb(255, 0, 128), rgb(200, 37, 157), rgb(140, 71, 153), rgb(68, 46, 159), rgb(0, 50, 160));
     background-color: transparent;
     font-weight: bold;
     box-shadow: 0 0 2px #0366fa;
+}
+
+footer {
+    background: linear-gradient(to right, rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 27%, rgb(241, 235, 27), rgb(241, 235, 27) 33%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142));
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+header {
+    background: linear-gradient(to right, rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 27%, rgb(241, 235, 27), rgb(241, 235, 27) 33%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142));
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+/* Estilos para a barra de navegação no desktop */
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    margin: 0 10px;
+}
+
+/* Estilos para o ícone de hambúrguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Media query para telas pequenas (celulares) */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    button {
+        width: 90%;
+        height: auto;
+    }
+
+    a {
+        padding: 0px;
+    }
+
+    p {
+        padding: 0px;
+        text-align: center;
+    }
+
+    img {
+        justify-content: center;
+        display: block;
+    }
+
+    iframe {
+        width: 125%;
+        height: auto;
+    }
+}
+
+.logo_cunha {
+    height: 70px;
+    width: 70px;
+}
+
+.img-especial {
+    width: 450px;
+    height: 275px;
 }

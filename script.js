@@ -1,6 +1,6 @@
-function setValueRandom(max, min) {
-    let random = Math.floor(Math.random() * (max - min + 1) + min)
-    return random
+function valorAlt(max, min) {
+    let aleatorio = Math.floor(Math.random() * (max - min + 1) + min)
+    return aleatorio
 }
 
 function mostra(qual) {
@@ -104,7 +104,7 @@ function ex2Prova() {
 
     for (let i = 0; i < matriz.length; i++) {
         for (let j = 0; j < matriz.length; j++) {
-            matriz[i][j] = setValueRandom(20, 1)
+            matriz[i][j] = valorAlt(20, 1)
         }
     }
 
@@ -158,7 +158,7 @@ function ex3Prova() {
 
     for(let i = 0; i < matriz.length; i++) {
         for(let j = 0; j < matriz.length; j++) {
-            matriz[i][j] = setValueRandom(50, 1)
+            matriz[i][j] = valorAlt(50, 1)
         }
     }
     
@@ -205,7 +205,7 @@ function ordenacao() {
 
     let array = []
     for(let i = 0; i < 10; i++) {
-        array.push(setValueRandom(20, 1))
+        array.push(valorAlt(20, 1))
     }
 
     res.innerHTML = `
@@ -289,7 +289,7 @@ function exLacoFor() {
     let array = []
 
     for(let i = 0; i < 10; i++) {
-        array.push(setValueRandom(10, 1))
+        array.push(valorAlt(10, 1))
     }
 
     console.log('Array Bagunçada: '+array)
@@ -324,7 +324,7 @@ function exLacoWhile() {
 
     let res = document.getElementById('resWhile')
     
-    let number = setValueRandom(20, 1)
+    let number = valorAlt(20, 1)
 
     res.innerHTML = `
        Número escolhido: ${number} <br>`
@@ -349,7 +349,7 @@ function exIfElse() {
     let res = document.getElementById('resIf')
     
     
-    let idade = setValueRandom(100, -10)
+    let idade = valorAlt(100, -10)
 
     res.innerHTML = `
         Idade: ${idade}<br>`
@@ -376,8 +376,3 @@ function exIfElse() {
     res.innerHTML += `   
     `
 } 
-
-// [ ] 7. Filmagem da explicação dos métodos de ordenação
-
-
-// [x] 8. programas de ordem crescente e decrescente
